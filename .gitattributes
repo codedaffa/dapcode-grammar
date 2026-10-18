@@ -1,1 +1,4 @@
+# GitHub Linguist overrides
+*.dap linguist-language=Rust
 *.dap linguist-detectable=true
+samples/** linguist-documentation
