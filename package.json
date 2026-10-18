@@ -1,0 +1,58 @@
+{
+    "name": "dapcode-grammar",
+    "displayName": "DapCode TextMate Grammar",
+    "description": "Official TextMate grammar and language definition for DapCode (.dap) programming language, supporting VS Code, GitHub Linguist, and modern editors.",
+    "version": "0.1.0",
+    "publisher": "codedaffa",
+    "license": "MIT",
+    "homepage": "https://github.com/codedaffa/dapcode-grammar",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codedaffa/dapcode-grammar.git"
+    },
+    "bugs": {
+        "url": "https://github.com/codedaffa/dapcode-grammar/issues"
+    },
+    "icon": "icons/dapcode.png",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "dapcode",
+        "dap",
+        "grammar",
+        "linguist",
+        "syntax-highlighting",
+        "textmate"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "dapcode",
+                "aliases": [
+                    "DapCode",
+                    "dapcode",
+                    "dap"
+                ],
+                "extensions": [
+                    ".dap"
+                ],
+                "configuration": "./language-configuration.json",
+                "icon": {
+                    "light": "./icons/dapcode.svg",
+                    "dark": "./icons/dapcode.svg"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dapcode",
+                "scopeName": "source.dap",
+                "path": "./syntaxes/dapcode.tmLanguage.json"
+            }
+        ]
+    }
+}

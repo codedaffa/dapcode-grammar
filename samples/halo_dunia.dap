@@ -1,0 +1,12 @@
+/// Contoh Program DapCode: Halo Dunia & Interpolasi String
+fungsi utama() {
+    cetak("=====================================")
+    cetak("🚀 Halo dari Bahasa Pemrograman DapCode!")
+    cetak("=====================================")
+
+    nama := "Daffa"
+    bahasa := "DapCode"
+    tahun := 2026
+
+    cetak("Selamat datang {nama} di ekosistem {bahasa} ({tahun})!")
+}

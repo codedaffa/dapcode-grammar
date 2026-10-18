@@ -1,0 +1,15 @@
+/// Contoh Program DapCode: Fungsi, Error Union, dan Pencocokan
+fungsi bagi(pembilang: desimal, penyebut: desimal) -> desimal ! Teks {
+    jika penyebut == 0.0 {
+        gagal "Penyebut tidak boleh nol!"
+    }
+    kembali pembilang / penyebut
+}
+
+fungsi utama() {
+    hasil := bagi(100.0, 4.0) ? tangkap err {
+        cetak("Terjadi kesalahan: {err}")
+        0.0
+    }
+    cetak("Hasil 100 / 4 = {hasil}")
+}
